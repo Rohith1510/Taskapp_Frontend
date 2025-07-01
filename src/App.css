@@ -1,16 +1,13 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f7f7f7;
-}
+/* Remove most default styles, use Tailwind for utility classes */
 
 .App {
-  max-width: 600px;
-  margin: 40px auto;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding: 24px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Glassmorphism gradient background */
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 }
 
 h1, h2 {

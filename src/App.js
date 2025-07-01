@@ -38,7 +38,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1>Task Management App</h1>
+        {/* <h1>Task Management App</h1> */}
         <AppRoutes session={session} />
         
       </div>

@@ -1,3 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.7s cubic-bezier(.4,0,.2,1) both;
+}
+
+/* Remove moving gradient animation, use static dark gradient */
+.animated-gradient-bg {
+  background: linear-gradient(135deg, #0f2027 0%, #232526 50%, #1a2980 100%);
+}
+
+/* Apple-style pastel rainbow gradient border for cards */
+.gradient-border {
+  position: relative;
+  z-index: 0;
+}
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0c3fc 25%, #8ec5fc 50%, #f093fb 75%, #f5576c 100%);
+}
+
+/* You can add custom styles below or keep existing ones if needed */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
