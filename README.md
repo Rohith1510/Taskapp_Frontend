@@ -15,7 +15,7 @@ This is a full-stack Task Management Web Application built for a hackathon run b
 ---
 
 ## Architecture Flow
-![Architecture Flow](frontend/public/flow.png)
+![Architecture Flow](public/flow.png)
 
 ---
 
